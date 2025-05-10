@@ -1,0 +1,108 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: linear-gradient(to right, rgb(136, 136, 231), rgb(46, 201, 103));}
+header {
+background: url(img/turi.jpg) center/cover no-repeat;
+height: 250px; /* Altura controlada */
+color: white;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0 1em;
+filter: brightness(1.2); /* Aumenta
+ la nitidez de la imagen */
+
+}
+header::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(45, 41, 41, 0.5); /* Aquí ajustas la opacidad de la capa oscura */
+z-index: 1;
+}
+
+table {
+    align-items: center;
+}
+nav { background: #333; padding: 0.5em; text-align: center; }
+td a{ color: white; margin: 0 15px; text-decoration: none; }
+tr :hover {
+background-color: #555;
+font-weight: bold; 
+transition: all 0.3s ease; 
+transform: scale(00.5s);
+}
+
+h1, h2, h3 { color: #333; }
+section { padding: 2em; }
+.lugar { margin-bottom: 2em; }
+form { max-width: 400px; margin: auto; }
+input, textarea { width: 100%; padding: 10px; margin: 5px 0; }
+footer { background-color: #333; color: white; text-align: center; padding: 1em 0; margin-top: 2em; }
+img { max-width: 100%; height: 200px; }
+.carousel-item img { height: 400px; object-fit: cover; }    
+img :hover { transform: scale(1.05); transition: transform 0.5s; }
+.carousel-control-prev-icon, .carousel-control-next-icon { background-color: #000; border-radius: 50%; }
+.carousel-control-prev, .carousel-control-next { width: 5%; }
+.carousel-control-prev-icon, .carousel-control-next-icon { width: 30px; height: 30px; }
+.carousel-control-prev-icon::after, .carousel-control-next-icon::after { display: none; }
+.carousel-control-prev-icon::before, .carousel-control-next-icon::before { content: ''; display: block; width: 100%; height: 100%; background-size: contain; background-repeat: no-repeat; }
+.carousel-control-prev-icon::before { background-image: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.svg#chevron-left'); }
+.carousel-control-next-icon::before { background-image: url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.svg#chevron-right'); }
+@media (max-width: 600px) {
+    nav { display: block; }
+    nav a { display: block; margin: 5px 0; }
+    .carousel-item img { height: 200px; }
+}
+#contacto {
+background: url('tu-imagen-de-fondo.jpg') center/cover no-repeat;
+padding: 4em 2em;
+text-align: center;
+}
+
+#contacto h2 {
+color: white;
+margin-bottom: 2em;
+}
+
+#contacto form {
+max-width: 400px;
+margin: auto;
+background: rgba(255, 255, 255, 0.2);
+padding: 2em;
+border-radius: 20px;
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px); /* soporte para Safari */
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+color: white;
+}
+
+#contacto input,
+#contacto textarea {
+width: 100%;
+padding: 0.8em;
+margin-bottom: 1em;
+border: none;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.3);
+color: black;
+}
+
+#contacto button {
+width: 100%;
+padding: 0.8em;
+background-color: #4CAF50;
+color: white;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+font-weight: bold;
+transition: background-color 0.3s;
+}
+
+#contacto button:hover {
+background-color: #45a049;
+}
