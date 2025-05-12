@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre Nosotros, TuriWeb</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fb;
+      padding-top: 50px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #1a3e72;
+    }
+
+    .value-item:hover {
+      background-color: #e9ecef;
+      transform: scale(1.03);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .highlight {
+      color: #198754;
+      font-weight: 600;
+    }
+
+    .card {
+      border: none;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="section-title">Sobre Nosotros</h1>
+
+  <div class="row mb-5">
+    <div class="col-md-12">
+      <p class="fs-5">
+        En <span class="highlight">TuriWeb</span>, nos dedicamos a proporcionar información real, útil y actualizada sobre los principales destinos turísticos del occidente de El Salvador, con especial enfoque en Santa Ana. Nuestra plataforma está diseñada para ser una herramienta práctica y confiable tanto para visitantes locales como extranjeros que desean explorar esta región llena de cultura, naturaleza y tradición.
+      </p>
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <h3 class="text-primary">Misión</h3>
+      <p>
+        Brindar información turística actualizada, confiable y accesible sobre los destinos más destacados de la zona occidental de El Salvador, promoviendo el turismo responsable, local y seguro.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <h3 class="text-primary">Visión</h3>
+      <p>
+        Ser el sitio web líder en turismo occidental salvadoreño, reconocido por la calidad, veracidad y utilidad de su contenido, y por ser un aliado clave para viajeros que buscan explorar lo mejor de la región.
+      </p>
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <h3 class="text-primary">Nuestros Valores</h3>
+    <div class="row">
+      <div class="col-md-4 value-item p-3">
+        <h5>Veracidad</h5>
+        <p>Solo compartimos información confirmada, actual y útil.</p>
+      </div>
+      <div class="col-md-4 value-item p-3">
+        <h5>Compromiso Local</h5>
+        <p>Promovemos destinos, emprendimientos y cultura de nuestra zona.</p>
+      </div>
+      <div class="col-md-4 value-item p-3">
+        <h5>Accesibilidad</h5>
+        <p>Hacemos que la información sea clara, sencilla y para todos.</p>
+      </div>
+      <div class="col-md-4 value-item p-3">
+        <h5>Responsabilidad</h5>
+        <p>Fomentamos un turismo respetuoso con el medio ambiente y comunidades.</p>
+      </div>
+      <div class="col-md-4 value-item p-3">
+        <h5>Innovación</h5>
+        <p>Buscamos siempre nuevas formas de mejorar la experiencia del usuario.</p>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="text-primary">Propuesta de Valor</h3>
+    <p class="fs-5">
+      En <span class="highlight">TuriWeb</span>, ofrecemos una guía completa y confiable de turismo en la zona occidental de El Salvador. Nuestro contenido está diseñado para facilitar la planificación de viajes con datos verificados, recomendaciones prácticas y experiencias auténticas, todo desde una sola plataforma.
+    </p>
+  </div>
+</div>
+
+<footer class="mt-5">
+  &copy; 2025 TuriWeb - Todos los derechos reservados
+</footer>
+
+<script>
+  // Resalta valores con animación de entrada
+  const values = document.querySelectorAll('.value-item');
+  values.forEach((el, i) => {
+    el.style.opacity = 0;
+    setTimeout(() => {
+      el.style.opacity = 1;
+      el.style.transition = "opacity 1s";
+    }, i * 200);
+  });
+</script>
+
+</body>
+</html>
